@@ -37,8 +37,6 @@ public class MyContainerTest {
     public void testInvalidIndex() {
         MyContainer<String> list = new MyContainer<>();
         list.add("Hello");
-        assertThrows(IndexOutOfBoundsException.class, () -> {
-            list.get(1);
-        });
+        assertThrows(IndexOutOfBoundsException.class, () -> list.get(1));
     }
 }
